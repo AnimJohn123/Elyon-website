@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    background-image: url(john.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Menu-Bar
+{
+    background: rgb(red, green, blue);
+    text-align: center;
+
+}
+.Menu-Bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(59, 187, 9);
+}
+.Menu-Bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.Menu-Bar ul a
+{
+    text-decoration: wavy;
+    color: aqua;
+}
+.active, .Menu-Bar ul li:hover
+{
+    background: #262926;
+    border-radius: 3px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.Menu-Bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(66, 4, 4);
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.Menu-Bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.Menu-Bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #4020b3;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.Menu-Bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.Menu-Bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: blue;
+}
+.help .sub-menu-1
+{
+    float: inline-start;
+    color: black;
+}
